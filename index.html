@@ -1,26 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grameenfly</title>
+    <link rel="stylesheet" href="styles/design.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,200,0,0" />
 </head>
+
 <body>
     <header>
         <nav>
-            <img src="Images/logo.png" alt="">
+            <img id="logo" src="Images/logo.png" alt="">
             <div class="nav-menu">
                 <ul>
-                    <li><a href="">Home</a></li>
+                    <li><a href="" style="color: #ED0066; font-size: 18px; 
+                        font-weight: 700;">Home</a></li>
                     <li><a href="">Packages</a></li>
                     <li><a href="">Testimonial</a></li>
                     <li><a href="">Blog</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
             </div>
+            <div class="menubar">
+                <img src="Images/icons/menu.png" alt="">
+            </div>
         </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="section-01">
+            <div class="content-01">
+                <h1>Explore Your Travel</h1>
+                <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac
+                    quis sapien urna eu phasellus.</p>
+                <div class="search-box">
+                    <input type="text" id="selectbox" placeholder="Where go">
+                    <input type="text" id="selectbox" placeholder="When">
+                    <input type="text" id="selectbox" placeholder="Select Type">
+                    <button class="btn-primary find-btn">
+                        <img src="Images/icons/search-icon.png" alt="">
+                        <span id="find-now" style="margin-left: 8px;">Find Now</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
+
 </html>
