@@ -244,7 +244,6 @@ nav .menubar {
 
 
 hr {
-    width: 393px;
     height: 1px;
     background-color: #1313181A;
     border: none;
@@ -294,13 +293,40 @@ hr {
 
 
 
+/* Footer */
+footer {
+    margin-top: 100px;
+    padding: 110px 284px;
+    background-color: #1313180D;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+footer p {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+footer .icon-group {
+    justify-content: center;
+    align-items: center;
+}
+
+footer .icon-group img{
+    margin-right: 32px;
+}
+
+hr {
+    margin: 50px 0;
+}
 
 
 
 
 
 @media screen and (max-width: 576px) {
-    body {
+    header, main {
         margin: 0 20px;
     }
 
@@ -377,7 +403,7 @@ hr {
         width: 100%;
     }
 
-    .section-04 {
+    .section-04, footer {
         margin-top: 24px;
     }
 
@@ -399,12 +425,44 @@ hr {
         display: block;
     }
 
+    .content-07 {
+        padding: 24px;
+    }
+
     .content-07 input {
-        padding: 16px 146px 16px 16px;
+        padding: 16px 108px 16px 16px;
         border: none;
         border-radius: 8px;
         background: rgba(19, 19, 24, 0.05);
         margin-bottom: 16px;
+    }
+
+    .content-07 button {
+        padding: 14px 94px;
+    }
+
+    .img-content-07 img{
+        margin-top: 16px;
+        max-width: 335px;
+        max-height: 300px;
+    }
+
+
+    footer {
+        padding: 32px 44px;
+    }
+    
+    footer p {
+        margin-top: 16px;
+        margin-bottom: 32px;
+    }
+    
+    footer .icon-group img{
+        margin-right: 32px;
+    }
+    
+    hr {
+        margin: 50px 0;
     }
 
 }
