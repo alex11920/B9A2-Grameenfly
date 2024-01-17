@@ -306,6 +306,7 @@ footer {
 footer p {
     margin-top: 16px;
     margin-bottom: 32px;
+    max-width: 769px;
 }
 
 footer .icon-group {
@@ -325,7 +326,7 @@ hr {
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 600px) {
     header, main {
         margin: 0 20px;
     }
@@ -383,7 +384,7 @@ hr {
     }
 
     .find-btn #find-now {
-        margin-left: -40px;
+        margin-left: -20px;
     }
 
     .section-02,
@@ -421,16 +422,17 @@ hr {
 
     .video-content-06 video {
         margin-top: 24px;
-        width: 335px;
+        width: 100%;
         display: block;
     }
 
     .content-07 {
         padding: 24px;
+        margin-right: 0;
     }
 
     .content-07 input {
-        padding: 16px 108px 16px 16px;
+        padding: 16px 146px 16px 16px;
         border: none;
         border-radius: 8px;
         background: rgba(19, 19, 24, 0.05);
@@ -438,13 +440,12 @@ hr {
     }
 
     .content-07 button {
-        padding: 14px 94px;
+        padding: 14px 112px;
     }
 
     .img-content-07 img{
         margin-top: 16px;
-        max-width: 335px;
-        max-height: 300px;
+        width: 100%;
     }
 
 
