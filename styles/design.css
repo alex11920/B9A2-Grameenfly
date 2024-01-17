@@ -9,6 +9,7 @@
 :root {
     --primary-color: #ED0066;
     --secondary-color: #424247;
+    --text-color: #131318B2;
     --border-radius-16: 16px;
     --border-radius-08: 8px;
     --neutral-color: white;
@@ -18,6 +19,7 @@
 /* main style */
 .btn-primary {
     padding: 16px 34px;
+    font-size: 20px;
     border-radius: 8px;
     border: none;
     color: var(--neutral-color);
@@ -30,10 +32,11 @@ h2 {
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
+    margin-bottom: 24px;
 }
 
 p {
-    color: rgba(19, 19, 24, 0.70);
+    color: var(--text-color);
 }
 
 
@@ -117,6 +120,177 @@ nav .menubar {
     align-items: center;
 }
 
+.find-btn #find-now {
+    margin-left: 8px;
+}
+
+
+
+/* Section 02 */
+.section-02,
+.section-06,
+.section-07 {
+    max-width: 1170px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid blueviolet; /* parent border  */
+}
+
+.content-02,
+.content-06 {
+    margin-right: 74px;
+}
+
+.content-02 p,
+.content-06 p {
+    margin-bottom: 24px;
+}
+
+.list-of-tours li {
+    margin-bottom: 16px;
+    color: var(--text-color);
+}
+
+.content-02 .btn-primary,
+.content-06 .btn-primary {
+    margin-top: 32px;
+}
+
+.img-content-02 img {
+    margin-top: 24px;
+}
+
+
+
+/* Section 04 */
+.section-04 {
+    margin-top: 100px;
+}
+
+.section-04>h2,
+.section-04>p {
+    text-align: center;
+}
+
+.box-container {
+    margin-top: 48px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1170px;
+}
+
+
+.card-1,
+.card-2,
+.card-3 {
+    padding: 32px;
+    max-width: 573px;
+    max-height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.card-2 {
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.card-3 {
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+}
+
+.box-container img {
+    margin-bottom: 32px;
+}
+
+.box-container h4 {
+    margin-bottom: 16px;
+}
+
+
+/* Section 06 */
+.content-06 {
+    margin-right: 28px;
+}
+
+.video-content-06 video {
+    width: 610px;
+    border-radius: 16px;
+    max-height: auto;
+    display: block;
+}
+
+
+
+/* Section 07 */
+.content-07 {
+    padding: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius-08);
+    margin-right: 24px;
+}
+
+.content-07 h4 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+
+hr {
+    width: 393px;
+    height: 1px;
+    background-color: #1313181A;
+    border: none;
+    margin: 24px 0;
+}
+
+.content-07 input {
+    padding: 16px 218px 16px 16px;
+    border: none;
+    border-radius: 8px;
+    background: rgba(19, 19, 24, 0.05);
+    margin-bottom: 16px;
+}
+
+.content-07 button {
+    padding: 14px 148px;
+}
+
+/* .section-07 .batch {
+    position: relative;
+    bottom: 175px;
+    left: 165px;
+    width: 324px;
+    height: 120px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--border-radius-16);
+    text-align: center;
+    transform: rotate(-19.628deg);
+} */
+
+.batch p {
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+.batch h2 {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.img-content-07 img{
+    max-width: 672px;
+    max-height: 422px;
+}
 
 
 
@@ -126,7 +300,13 @@ nav .menubar {
 
 
 @media screen and (max-width: 576px) {
-    * {}
+    body {
+        margin: 0 20px;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
 
     nav #logo {
         width: 50%;
@@ -143,6 +323,7 @@ nav .menubar {
     .section-01 {
         width: 100%;
         background-position: center;
+        margin-top: 20px;
     }
 
     .content-01 h1 {
@@ -150,7 +331,9 @@ nav .menubar {
     }
 
     .content-01 p {
+        margin-top: 8px;
         width: 304px;
+        margin-bottom: 32px;
     }
 
     .search-box {
@@ -173,7 +356,55 @@ nav .menubar {
         height: 52px;
     }
 
-    #find-now {
-        margin-left: 0;
+    .find-btn #find-now {
+        margin-left: -40px;
     }
+
+    .section-02,
+    .section-06, .section-07, .content-02,
+    .content-06 {
+        margin-top: 24px;
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .content-02 .btn-primary,
+    .content-06 .btn-primary {
+        margin-top: 0;
+    }
+
+    .img-content-02 img {
+        width: 100%;
+    }
+
+    .section-04 {
+        margin-top: 24px;
+    }
+
+    .box-container {
+        margin-top: 16px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        padding: 32px;
+        text-align: justify;
+    }
+
+    .video-content-06 video {
+        margin-top: 24px;
+        width: 335px;
+        display: block;
+    }
+
+    .content-07 input {
+        padding: 16px 146px 16px 16px;
+        border: none;
+        border-radius: 8px;
+        background: rgba(19, 19, 24, 0.05);
+        margin-bottom: 16px;
+    }
+
 }
